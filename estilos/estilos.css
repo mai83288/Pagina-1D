@@ -1,0 +1,298 @@
+header {
+  background-color: aliceblue;
+}
+
+nav {
+  display: flex;
+  background-color: #1d1d1d;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav a {
+  flex: 1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#harry {
+  background-color: #adebb3;
+}
+
+#index {
+  background-image: url("../imagenes/1d2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#liam {
+  background-color: #7851a9;
+}
+
+#louis {
+  background-color: #c4302b;
+}
+
+#niall {
+  background-color: #0072bb;
+}
+
+#zayn {
+  background-color: #0b6d74;
+}
+
+.headerimg {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+nav a.zayn:hover {
+  background-image: url("../imagenes/zayn1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav a.harry:hover {
+  background-image: url("../imagenes/harry1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav a.liam:hover {
+  background-image: url("../imagenes/liam1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav a.louis:hover {
+  background-image: url("../imagenes/louishover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav a.niall:hover {
+  background-image: url("../imagenes/niall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav a.index:hover {
+  background-image: url("../imagenes/1d1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap; /* No queremos que salten de línea */
+  margin: 10px;
+}
+
+/* El contenido principal (section + article) */
+.medio {
+  flex: 3;
+  display: flex;
+  flex-direction: column; /* 👈 asegura orden vertical */
+  gap: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+section {
+  order: 1;
+  background: linear-gradient(135deg, #fffdf7, #f7f3e9);
+  padding: 25px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+article {
+  order: 2;
+  background: linear-gradient(135deg, #e9fdf4, #d4f5e6);
+  padding: 25px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+aside {
+  background: linear-gradient(135deg, #f3f1fa, #e2def4);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+h1 {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.album {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.album img {
+  width: 120px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.album:hover {
+  transform: scale(1.15);
+  background: linear-gradient(135deg, #f1f8e9, #e3f2fd);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.album p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a237e;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fuentes/Montserrat_Alternates/Montserrat_Alternates/MontserratAlternates-Regular.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fuentes/Poppins/Poppins-Light.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+.in-memoriam {
+  background-color: #f0f7ff;
+  border-left: 4px solid #6e6e6e;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.video{
+    width: 400px;
+     height: 315px; 
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    order: 3;
+    width: 100%;
+  }
+
+  .medio {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    flex: 1 1 50%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+    position: static;
+    transform: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section,
+  article,
+  aside {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .album {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .album img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    flex: 1 1 100%;
+    font-size: 13px;
+  }
+
+  section,
+  article,
+  aside {
+    padding: 15px;
+  }
+
+  .album p {
+    font-size: 16px;
+  }
+}
